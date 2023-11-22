@@ -47,6 +47,8 @@ open class ActivityWithMenus : AppCompatActivity() {
                 true
             }
             R.id.salir -> {
+                val cuadroDialogo = CuadroDialogo()
+                cuadroDialogo.show(supportFragmentManager, "Cuadro_dialogo")
                 true
             }
             else -> super.onOptionsItemSelected(item)
