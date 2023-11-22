@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/listadoPelis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Películas" />
+    <item
+        android:id="@+id/addPeli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Añadir Pelicula" />
+    <item
+        android:id="@+id/appPeli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="App" />
+
+    <item
+        android:id="@+id/buscar"
+        android:title="Buscar"
+        android:icon="@drawable/buscar"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:id="@+id/salir"
+        android:title="Salir"
+        android:icon="@drawable/salir"
+        app:showAsAction="ifRoom"
+        />
+
+</menu>
