@@ -2,6 +2,7 @@ package com.example.listapeliculas
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.GridLayoutManager
@@ -10,7 +11,7 @@ import com.example.listapeliculas.FilmProvider.Companion.filmList
 import com.example.listapeliculas.adapter.FilmAdapter
 import com.example.listapeliculas.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : ActivityWithMenus() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -19,5 +20,6 @@ class MainActivity : AppCompatActivity() {
 
         binding.recycler.layoutManager = LinearLayoutManager(this)
         binding.recycler.adapter = FilmAdapter(FilmProvider.filmList)
+
     }
 }
